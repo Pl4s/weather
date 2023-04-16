@@ -32,7 +32,6 @@ Add your API key in Constant.kt
 Build the project 
 Run it on an emulator or a physical device
 
-
 Screenshots
 
-.![Artboard](https://user-images.githubusercontent.com/96026315/232347511-0222c1be-1884-43bd-8f52-e91c0834bff7.png)
+![Artboard](https://user-images.githubusercontent.com/96026315/232347511-0222c1be-1884-43bd-8f52-e91c0834bff7.png)
