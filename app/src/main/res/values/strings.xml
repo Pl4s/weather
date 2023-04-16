@@ -1,0 +1,59 @@
+<resources>
+
+    <string name="app_name">Weather</string>
+    <string name="local_date">12 December 2022, 17:05 PM</string>
+    <string name="default_unit">08:00 AM</string>
+    <string name="default_city">Athens, GR</string>
+    <string name="empty_string"></string>
+
+    <string name="default_city_list">Palaio Faliro</string>
+    <string name="feels_like">Feels like</string>
+    <string name="default_status">Clear sky</string>
+    <string name="default_temp">30°</string>
+    <string name="error_text">Something went wrong</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="celsius_symbol">%d\u00b0</string>
+    <string name="cancel">Cancel</string>
+    <string name="added">Added</string>
+    <string name="wind_text">Wind</string>
+    <string name="percent_symbol">%d%%</string>
+    <string name="cloudiness">Cloudiness</string>
+    <string name="wind_deg_speed">NW 10m/s</string>
+    <string name="ms">m/s</string>
+    <string name="pressure_level">1014 hPa</string>
+    <string name="hPa">%d hPa</string>
+    <string name="pressure_text">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="humidity_level">65%</string>
+    <string name="visibility_text">Visibility</string>
+    <string name="visibility">10.0 km</string>
+    <string name="km">%d km</string>
+    <string name="created_by">Created by</string>
+    <string name="alex">Alex</string>
+    <string name="forecast_date">21/Mar</string>
+    <string name="hourly_forecast">HOURLY FORECAST</string>
+    <string name="daily_forecast">10 DAYS FORECAST</string>
+    <string name="min_temp">10°</string>
+    <string name="max_temp">40°</string>
+    <string name="hint_text">Enter the name of city</string>
+    <string name="weatherIconDesc">Visual Representation of Current weather Condition</string>
+
+    <!-- Settings Preferences -->
+    <string-array name="unit_system_entries">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+
+    <string-array name="unit_system_values">
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+
+    <string name="unit_default">metric</string>
+    <string name="unit_key">unit</string>
+    <string name="unit_label">Units</string>
+    <string name="unit_system">Unit</string>
+    <string name="unit_title">Choose Your Unit System</string>
+
+</resources>

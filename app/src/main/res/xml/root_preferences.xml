@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:title="@string/unit_title"
+        style="@style/PreferenceCategoryStyle">
+
+        <ListPreference
+
+            app:defaultValue="@string/unit_default"
+            app:entries="@array/unit_system_entries"
+            app:entryValues="@array/unit_system_values"
+            app:iconSpaceReserved="false"
+            app:key="@string/unit_key"
+            app:title="@string/unit_system"
+            app:dialogTheme="@style/CustomListPreferenceDialogTheme" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

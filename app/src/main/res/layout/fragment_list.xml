@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pullToRefreshFragmentList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.List">
+
+    <TextView
+        android:id="@+id/tvCitiesList"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/searchview_background"
+        android:drawablePadding="3dp"
+        android:fontFamily="@font/latoregular"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:text="@string/hint_text"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCitiesList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCitiesList"
+        tools:listitem="@layout/cities_list" />
+</androidx.constraintlayout.widget.ConstraintLayout>

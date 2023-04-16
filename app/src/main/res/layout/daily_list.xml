@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDateDailyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/latoregular"
+        android:text="@string/forecast_date"
+        android:textColor="@color/dark_white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guidelineDate"
+        app:layout_constraintTop_toBottomOf="@+id/separator"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/ivIconDailyList"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/weatherIconDesc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guidelineIcon"
+        app:layout_constraintTop_toBottomOf="@+id/separator"
+        app:layout_constraintVertical_bias="0.5"
+        tools:src="@drawable/w10d" />
+
+    <TextView
+        android:id="@+id/tvTemperatureDailyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_temp"
+        android:textColor="@color/dark_white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guidelineTemp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/separator"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvTempMinDailyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min_temp"
+        android:textColor="@color/dark_white"
+        android:textSize="20sp"
+        app:drawableLeftCompat="@drawable/arrow_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guidelineTempMin"
+        app:layout_constraintTop_toBottomOf="@+id/separator"
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout_editor_absoluteX="251dp" />
+
+    <TextView
+        android:id="@+id/tvTempMaxDailyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max_temp"
+        android:textColor="@color/dark_white"
+        android:textSize="20sp"
+        app:drawableLeftCompat="@drawable/arrow_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guidelineTempMax"
+        app:layout_constraintTop_toBottomOf="@+id/separator"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.61" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.81" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

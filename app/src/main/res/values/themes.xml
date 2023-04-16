@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Weathernew" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/dark_white</item>
+        <item name="android:textColorHint">@color/dark_white</item>
+        <item name="android:textColor">@color/dark_white</item>
+    </style>
+    <style name="TextAppearance.BottomNavigationView" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/latoregular</item>
+    </style>
+
+    <style name="PreferenceCategoryStyle" parent="Preference.Category">
+        <item name="android:textColor">@color/dark_white</item>
+        <item name="android:fontFamily">@font/latoregular</item>
+    </style>
+
+    <style name="SettingsFragmentStyle">
+        <item name="android:textColor">"@color/dark_white"</item>
+        <item name="android:fontFamily">"@font/latolight"</item>
+    </style>
+
+    <style name="CustomListPreferenceDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">@color/dark_white</item>
+        <item name="colorAccent">@color/grey</item>
+        <item name="android:textColorPrimary">@color/dark_white</item>
+        <item name="android:windowBackground">@color/red</item>
+    </style>
+
+
+
+
+</resources>

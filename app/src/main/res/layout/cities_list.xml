@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cv_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="@color/background_tint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.alexplas.weathernew.utils.AutoResizeTextView
+                    android:id="@+id/tvCityCitiesList"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/latoregular"
+                    android:text="@string/default_city_list"
+                    android:textColor="@color/dark_white"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@id/guidelineStart"
+                    app:layout_constraintTop_toBottomOf="@id/guidelineH1" />
+
+                <TextView
+                    android:id="@+id/tvTimeCitiesList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/latoregular"
+                    android:text="@string/default_unit"
+                    android:textColor="@color/dark_white"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@id/guidelineH2"
+                    app:layout_constraintStart_toEndOf="@+id/guidelineStart" />
+
+                <ImageView
+                    android:id="@+id/ivIconCityList"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/alex"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tvCityCitiesList"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    tools:src="@drawable/w10d" />
+
+                <TextView
+                    android:id="@+id/tvTempDailyList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/latoregular"
+                    android:text="@string/default_temp"
+                    android:textColor="@color/dark_white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+                    app:layout_constraintTop_toBottomOf="@id/guidelineH1" />
+
+                <TextView
+                    android:id="@+id/tvTempMinDailyList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/latoregular"
+                    android:text="@string/min_temp"
+                    android:textColor="@color/dark_white"
+                    android:textSize="15sp"
+                    app:drawableLeftCompat="@drawable/arrow_down_smaller"
+                    app:layout_constraintBottom_toTopOf="@id/guidelineH2"
+                    app:layout_constraintEnd_toStartOf="@id/guidelineTempMaxCitiesList" />
+
+                <TextView
+                    android:id="@+id/tvTempMaxDailyList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/latoregular"
+                    android:text="@string/max_temp"
+                    android:textColor="@color/dark_white"
+                    android:textSize="15sp"
+                    app:drawableLeftCompat="@drawable/arrow_up_smaller"
+                    app:layout_constraintBottom_toTopOf="@+id/guidelineH2"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineEnd" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.04" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineTempMaxCitiesList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.85" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.96" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineH1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.2" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineH2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.8" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_red"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivDeleteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="26dp"
+            android:contentDescription="@string/alex"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            tools:src="@drawable/ic_delete" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

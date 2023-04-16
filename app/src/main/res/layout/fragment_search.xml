@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".ui.Search"
+    tools:layout_editor_absoluteX="3dp"
+    tools:layout_editor_absoluteY="0dp">
+
+        <SearchView
+            android:id="@+id/svSearchList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/searchview_background"
+            android:queryBackground="@color/transparent"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvCancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/latoregular"
+            android:text="@string/cancel"
+            android:textColor="@color/dark_white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/rvSearchList"
+            app:layout_constraintEnd_toEndOf="@id/guidelineV"
+            app:layout_constraintStart_toEndOf="@+id/svSearchList"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearchList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/svSearchList"
+            tools:listitem="@layout/search_list" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

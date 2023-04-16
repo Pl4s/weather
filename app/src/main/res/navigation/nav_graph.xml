@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/today">
+
+    <fragment
+        android:id="@+id/today"
+        android:name="com.alexplas.weathernew.ui.Today"
+        tools:layout="@layout/activity_main"
+        android:label="ui.Today">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/list"
+        android:name="com.alexplas.weathernew.ui.List"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list">
+
+        <action
+            android:id="@+id/action_list_to_cityDetails"
+            app:destination="@id/cityDetails">
+            <argument
+                android:name="longitude"
+                app:argType="float" />
+
+            <argument
+                android:name="latitude"
+                app:argType="float" />
+        </action>
+
+        <action
+            android:id="@+id/action_list_to_search"
+            app:destination="@id/search" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/search"
+        android:name="com.alexplas.weathernew.ui.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/action_search_to_list"
+            app:destination="@id/list" />
+        <action
+            android:id="@+id/action_search_to_weatherDetails"
+            app:destination="@id/cityDetails">
+
+            <argument
+                android:name="longitude"
+                app:argType="float" />
+
+            <argument
+                android:name="latitude"
+                app:argType="float" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cityDetails"
+        android:name="com.alexplas.weathernew.ui.CityDetails"
+        android:label="cityDetails"
+        tools:layout="@layout/fragment_city_details">
+        <argument
+            android:name="latitude"
+            app:argType="float" />
+        <argument
+            android:name="longitude"
+            app:argType="float" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.alexplas.weathernew.ui.Settings"
+        android:label="Settings" />
+
+</navigation>
