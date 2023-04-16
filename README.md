@@ -8,6 +8,8 @@ Features
 - Automatically detect and display weather for user's current location (optional)
 - Search for a city to get weather information
 - Save favorite cities for easy access
+- Adaptive layout depending on weather conditions
+- Metric & Imperial Units
 - Offline support with SQLite and Room database
 - MVVM architectural pattern for clean and scalable code
 - Google GPS integration for location services
@@ -35,3 +37,7 @@ Installation
 Screenshots
 
 ![Artboard](https://user-images.githubusercontent.com/96026315/232347511-0222c1be-1884-43bd-8f52-e91c0834bff7.png)
+
+Get on Google Play
+
+https://play.google.com/store/apps/details?id=com.alexplas.weathernew
